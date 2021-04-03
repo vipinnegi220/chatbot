@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bot.css">
+
+
+    <script>
+        document.getElementById("va1")
+            .addEventListener("keyup", function(event) {
+                event.preventDefault();
+                if (event.keycode === 13) {
+
+                    document.getElementById("mybtn").click();
+                }
+            });
+    </script>
+</head>
+
+<body>
+
+    <input class="input" id="va1" placeholder="your text here">
+
+    <button id="mybtn" type="submit" class="send">Send</button> &nbsp; &nbsp;
+
+</body>
+
+</html>
